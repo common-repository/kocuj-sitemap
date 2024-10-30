@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# JS minify
+# Tool for "Kocuj Internal Lib"
+
+# Author: Dominik Kocuj
+# License: http://www.gnu.org/licenses/gpl-2.0.html (GNU General Public License v2 or later)
+# Copyright (c) 2016-2020 kocuj.pl
+
+# Requires: "uglifyjs" script for "node.js"
+
+# WARNING! This tool is only for developers of this product. If you are not a developer, please, do not execute this file.
+
+uglifyjs -o "../js/data-helper.min.js" "../js/data-helper.js" -c
+uglifyjs -o "../js/exception.min.js" "../js/exception.js" -c
+uglifyjs -o "../js/exception-code.min.js" "../js/exception-code.js" -c
+uglifyjs -o "../js/helper.min.js" "../js/helper.js" -c
+if [ -f "../js/project/components/all/js-ajax/js-ajax.js" ]; then
+  uglifyjs -o "../js/project/components/all/js-ajax/js-ajax.min.js" "../js/project/components/all/js-ajax/js-ajax.js" -c
+fi
+if [ -f "../js/project/components/all/window/window.js" ]; then
+  uglifyjs -o "../js/project/components/all/window/window.min.js" "../js/project/components/all/window/window.js" -c
+fi
+if [ -f "../vendors/project/components/all/window/jQuery-UI-Dialog-extended/jquery.dialogOptions.js" ]; then
+  uglifyjs -o "../vendors/project/components/all/window/jQuery-UI-Dialog-extended/jquery.dialogOptions.min.js" "../vendors/project/components/all/window/jQuery-UI-Dialog-extended/jquery.dialogOptions.js" -c
+fi
+if [ -f "../js/project/components/backend/message/message.js" ]; then
+  uglifyjs -o "../js/project/components/backend/message/message.min.js" "../js/project/components/backend/message/message.js" -c
+fi
+if [ -f "../js/project/components/backend/review-message/review-message.js" ]; then
+  uglifyjs -o "../js/project/components/backend/review-message/review-message.min.js" "../js/project/components/backend/review-message/review-message.js" -c
+fi
+if [ -f "../js/project/components/backend/settings-fields/image.js" ]; then
+  uglifyjs -o "../js/project/components/backend/settings-fields/image.min.js" "../js/project/components/backend/settings-fields/image.js" -c
+fi
+if [ -f "../js/project/components/backend/settings-form/array.js" ]; then
+  uglifyjs -o "../js/project/components/backend/settings-form/array.min.js" "../js/project/components/backend/settings-form/array.js" -c
+fi
+if [ -f "../js/project/components/backend/settings-form/tabs.js" ]; then
+  uglifyjs -o "../js/project/components/backend/settings-form/tabs.min.js" "../js/project/components/backend/settings-form/tabs.js" -c
+fi
+if [ -f "../js/project/components/backend/update-message/update-message.js" ]; then
+  uglifyjs -o "../js/project/components/backend/update-message/update-message.min.js" "../js/project/components/backend/update-message/update-message.js" -c
+fi

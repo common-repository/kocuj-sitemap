@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# JS minify
+# Tool for "Kocuj Sitemap plugin"
+
+# Author: Dominik Kocuj
+# License: http://www.gnu.org/licenses/gpl-2.0.html (GNU General Public License v2 or later)
+# Copyright (c) 2013-2020 kocuj.pl
+
+# Requires: "uglifyjs" script for "node.js"
+
+# WARNING! This tool is only for developers of this product. If you are not a developer, please, do not execute this file.
+
+uglifyjs -o "../js/tiny-mce/kocujsitemap-plugin.min.js" "../js/tiny-mce/kocujsitemap-plugin.js" -c
+cd ..
+cd libs/kocuj-internal-lib/tools
+./js-minify
+cd ../../..
+cd libs/kocuj-pl-lib/tools
+./js-minify
+cd ../../..

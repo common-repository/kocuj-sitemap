@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" packagePrefix="KocujSitemapPlugin" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/kocuj-i-l-strings" isTestSource="false" packagePrefix="KocujIL\V13a" />
+      <sourceFolder url="file://$MODULE_DIR$/classes/kocuj-pl-lib-strings" isTestSource="false" packagePrefix="KocujPlLib\V13a" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

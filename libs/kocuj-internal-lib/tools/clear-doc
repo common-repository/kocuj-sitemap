@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Documentation remover
+# Tool for "Kocuj Internal Lib"
+
+# Author: Dominik Kocuj
+# License: http://www.gnu.org/licenses/gpl-2.0.html (GNU General Public License v2 or later)
+# Copyright (c) 2016-2020 kocuj.pl
+
+# WARNING! This tool is only for developers of this product. If you are not a developer, please, do not execute this file.
+
+rm -rf doc/js
+rm -rf doc/php
